@@ -1,5 +1,5 @@
 # Git ENSG
-
+lets go ona gagnéééééééééééééééééééé!!!!!!!!!!!ééééé
 ![Logo Git](images/git-logo.svg)
 
 **Git est un VCS (Version Control System) ou logiciel de gestion de versions** qui est notamment pensé pour le travail collaboratif. Il offre la possibilité :
@@ -329,3 +329,7 @@ Exemple d’intégration de Git dans Visual Studio Code
 
 - [Concepts Git sous forme de jeu](https://learngitbranching.js.org/)
 - [Visualizing Git Concepts with D3](https://onlywei.github.io/explain-git-with-d3)
+
+
+
+ALLEZ LES FILLES
