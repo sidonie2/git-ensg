@@ -1,5 +1,8 @@
 # Git ENSG
+
 lets go ona gagnéééééééééééééééééééé!!!!!!!!!!!ééééé
+Coucou chicas
+
 ![Logo Git](images/git-logo.svg)
 
 **Git est un VCS (Version Control System) ou logiciel de gestion de versions** qui est notamment pensé pour le travail collaboratif. Il offre la possibilité :
@@ -30,7 +33,7 @@ git --version
 
 Si vous n’avez pas encore de compte, c’est par ici : [Création de compte GitHub](https://github.com/signup)
 
-Ensuite, il faut [configurer un *Personnal token classic*](https://docs.github.com/fr/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#cr%C3%A9ation-dun-personal-access-token-classic), une sorte de mot de passe sécurisé. C’est notamment utile pour exécuter des commandes Git qui utiliseront le protocole HTTPS. Conservez ce token dans un fichier texte temporairement (vous n’y aurez plus accès ensuite).
+Ensuite, il faut [configurer un _Personnal token classic_](https://docs.github.com/fr/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#cr%C3%A9ation-dun-personal-access-token-classic), une sorte de mot de passe sécurisé. C’est notamment utile pour exécuter des commandes Git qui utiliseront le protocole HTTPS. Conservez ce token dans un fichier texte temporairement (vous n’y aurez plus accès ensuite).
 
 Sur vos machines personnelles, il est préférable [d’utiliser des URLs et une clé SSH](https://docs.github.com/fr/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
 
@@ -78,7 +81,7 @@ Pour initialiser un nouveau projet Git, la commande est `git init`. Cependant, i
 
     Tout le monde a normalement récupéré le projet !
 
-Quand on souhaite cloner un projet qui ne nous appartient pas, il est préférable d’en créer une copie (ce que l’on appelle un *fork*)
+Quand on souhaite cloner un projet qui ne nous appartient pas, il est préférable d’en créer une copie (ce que l’on appelle un _fork_)
 
 - on «forke» un projet existant dans son espace GitHub/GitLab
 - on clone son fork sur son ordinateur avec `git clone <url>`
@@ -128,7 +131,7 @@ Ces actions peuvent être répétées autant de fois que nécessaire, et cela sa
 
 Lorsque l’on souhaite envoyer ses modifications locales sur le repository distant, on utilise `git push`. Mais attention, si d’autres personnes ont déjà fait des modifications, il se peut que cela [génère des conflits](#conflits). Il est donc préférable de récupérer le code distant avant toutes nouvelles modifications à l’aide de `git fetch` ou `git pull`.
 
-Aussi, la plupart du temps, il n’est pas autorisé de mettre à jour directement la branche principale d’un projet. Il faut alors passer par des *pull requests*.
+Aussi, la plupart du temps, il n’est pas autorisé de mettre à jour directement la branche principale d’un projet. Il faut alors passer par des _pull requests_.
 
 ## Les commandes
 
@@ -231,12 +234,11 @@ git reset --hard origin/main
     - poussez sur votre repo distant
     - récupérez les modifications avec `git pull`
 
-
 ## Fusionner les modifications
 
 Souvent, en mode collaboratif, ou quand le projet ne nous appartient pas, seules quelques personnes ont le droit de mettre à jour la branche principale.
 
-**Pour demander l’intégration de nos modifications, nous allons donc passer par une *pull request* (GitHub) ou *merge request* (GitLab)**. Cela se passe directement en ligne. On parle alors de fusion ou de *merge*.
+**Pour demander l’intégration de nos modifications, nous allons donc passer par une _pull request_ (GitHub) ou _merge request_ (GitLab)**. Cela se passe directement en ligne. On parle alors de fusion ou de _merge_.
 
 [Documentation Pull Request GitHub](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
 
@@ -266,11 +268,8 @@ Lorsqu’une fusion est tentée, mais que deux personnes ont modifié une ou plu
 
 ```bash
 # début du conflit
-<<<<<<< HEAD
     # premier état du fichier
-=======
     # second état
->>>>>>> nom_branche
 # fin du conflit
 ```
 
@@ -297,16 +296,15 @@ git branch -d nom_branche
 ```
 
 ![Branches](images/branches.png)
-*Source atlassian.com*
+_Source atlassian.com_
 
-Lorsqu’une branche est créée, son point de départ est l’emplacement actuel du `HEAD` (commit, branche, etc.). Il est possible de déplacer l’intégralité d’une branche, c’est ce que l’on appelle un *rebase*. Cela revient à décrocher la branche de l’emplacement initial, pour la raccrocher à un autre emplacement.
+Lorsqu’une branche est créée, son point de départ est l’emplacement actuel du `HEAD` (commit, branche, etc.). Il est possible de déplacer l’intégralité d’une branche, c’est ce que l’on appelle un _rebase_. Cela revient à décrocher la branche de l’emplacement initial, pour la raccrocher à un autre emplacement.
 
 ![Rebase](images/rebase.png)
-*Source atlassian.com*
+_Source atlassian.com_
 
 !!! info "TP 2 - Suite et fin"
 
-    
     Notre problème actuel : nous avons modifié notre projet local (ajout des liens), mais le repo distant a été modifié également. Nous n’avions pas de branche spécifique. Les 2 branches `main` ont donc divergées. Il nous faudrait donc écraser la branche `main`, mais nous risquons de perdre notre travail. Pour résoudre ce «problème», en local :
 
     - créez une branche là où vous êtes, mais en restant sur la branche `main` (`git branch <nom_branche>`)
